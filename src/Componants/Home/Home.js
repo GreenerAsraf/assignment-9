@@ -16,7 +16,10 @@ const Home = () => {
             </div>
             <div>
             <h1 className='text-center'>Test your inner strength</h1>
-            <p></p>
+
+            <p>Quiz is one of the best way ti judge ourselves in a simliest way. In our website,you can check 
+                your programming knowledge with our standard multiple choice questions.
+            </p>
             </div>
          <div className='container-box'>
          {/* {

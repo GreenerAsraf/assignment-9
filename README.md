@@ -7,5 +7,8 @@ header is implemented and set up all route as children of it.
 
 tailwind css and raw css were used to style.......
 
+deplyed in netlify......
+live site link: https://gleaming-cuchufli-f172a7.netlify.app/
+
 
 
