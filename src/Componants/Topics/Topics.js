@@ -1,23 +1,31 @@
 import React from 'react';
 import './topics.css';
 import image from '../../download.jpg';
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
-const Topics = ({quiz}) => {
+const Topics = () => {
     // const {name}= quiz;
+    const quiz = useLoaderData().data;
     
-    console.log(quiz?.name);
+    console.log(quiz);
     return (
+        
         <div className='container-box justify-items-center bg-[#097a55] text-white'>
-          
-            <div className='w-100px card  rounded-lg p-6 shadow-xl'>
+        {
+            quiz.map(quiz=><div>
+                       <div className='w-100px card  rounded-lg p-6 shadow-xl'>
                
-                <img className='image' src={quiz?.logo} alt="" />
-                <h2 className='text-3xl'>{quiz?.name} </h2>
-                <p>Total Quiz: {quiz?.total}</p>
-                <br />
-                <Link className='p-2 rounded bg-fuchsia-500'>Click to start</Link>
-            </div>
+               <img className='image' src={quiz?.logo} alt="" />
+               <h2 className='text-3xl'>{quiz?.name} </h2>
+               <p>Total Quiz: {quiz?.total}</p>
+               <button className='p-2 rounded bg-fuchsia-500'><Link to ={`/topics/${quiz?.id}`} >Click to start</Link></button>
+           </div>
+           
+           
+            </div>)
+        }
+          
+         
         </div>
     );
 };

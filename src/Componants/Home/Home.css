@@ -1,5 +1,10 @@
+.title-container{
+    
+}
+
 .container-box{
     display: grid;
     grid-template-columns: auto auto ;
+    border: 2px solid peru;
     /* grid-gap: 10px; */
 }
