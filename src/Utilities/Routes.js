@@ -17,19 +17,11 @@ const router = createBrowserRouter([
       children: [
         {path: '/', element:<Home/>},
         {path: '/home', element:<Home/>},
-        {path:'/topics', element: <Topics/>}
+        {path:'/topics', element: <Topics/>},
         {path:'/statistics', element: <Statistics/>},
         {path:'/blog', element: <Blog/>},
         {path: '/about', element: <About/>}
       ]
-    //   loader: productsAndCartData,
-    //   children: [
-    //     { path: '/', element: <Home /> },
-    //     { path: '/home', element: <Home /> },
-    //     { path: '/shop', element: <Shop /> },
-    //     { path: '/cart', element: <Cart /> },
-    //     { path: '/about', element: <About /> },
-    //   ],
     },
   ])
 
