@@ -1,9 +1,15 @@
 import React from 'react';
 
-const Quiz = () => {
+const Quiz = ({question}) => {
+    console.log(question);
     return (
         <div>
-                <h2>Quiz </h2>
+              <div className='text-white'>
+              <h2>Quiz </h2>
+                <p className='bg-violet-500'>{question.question}</p>
+                
+                {question.options.map(option =><p><input type="checkbox" name="" id="" /> {option} </p>)}
+              </div>
         </div>
     );
 };
